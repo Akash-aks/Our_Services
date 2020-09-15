@@ -1,0 +1,180 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+    width: 70%;
+    margin: 50px auto;
+    //border: 2px solid black;
+}
+
+.image img
+{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.heading
+{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: rgb(255, 69, 0);
+    margin-bottom: 60px;
+}
+.heading span
+{
+    color: rgb(167, 5, 5);
+}
+
+.row
+{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.box
+{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    min-width: 190px;
+    width: 28%;
+    margin-bottom: 60px;
+    transition: 0.3s;
+    box-shadow: 5px 8px 5px darkgray;
+}
+
+/*.box-head
+{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px; 
+} */
+
+.box-head
+{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px; 
+    margin-top: -20px;
+}
+
+.icon
+{
+    width: 26%;
+    border: 1px solid rgb(194, 189, 189);
+    border-radius: 50%;
+    margin: 0px 37%;
+    transform: translateY(-50%);
+}
+
+/*.box-head .icon
+{
+    width: 20%;
+    border: 1px solid rgb(194, 189, 189);
+    border-radius: 50%;
+} */
+
+.box-head hr
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.box-body
+{
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.box-body .btn
+{
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 5px 0;
+    width: 70%;
+    margin-left: 15%;
+    color: black;
+    border: 2px solid rgb(255, 69, 0);
+    border-radius: 20px;
+    outline: none;
+}
+
+.box-body .btn:hover
+{
+     color: white;
+     background-color: rgb(255, 69, 0);
+}
+
+.box:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -1px rgba(0,0,0,0.15);
+}
+
+@media screen and (max-width: 1000px)
+{
+    .container{
+        width: 96%;
+    }
+
+    .heading{
+        padding: 0px 10px;
+    }
+    .box{
+        max-width: 300px;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .container{
+        width: 96%;
+    }
+
+    .heading{
+        padding: 0 7px;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+
+    .box{
+        max-width: 300px;
+        width: 90%;
+    }
+
+    .box-head hr
+    {
+        margin-top: -15px;
+    }
+
+    .box-body .btn{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
